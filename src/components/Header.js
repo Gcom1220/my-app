@@ -10,7 +10,7 @@ function Header() {
   
 
   return (
-    <header className="flex justify-between h-20 text-4xl font-lobster p-4">
+    <header className="flex justify-between h-20 text-3xl md:text-4xl font-lobster p-4">
       <Link to="/">
         <div className="flex justify-center items-center">
           <GiCoins /> <span className="text-slate-400">my</span>
