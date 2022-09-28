@@ -30,7 +30,7 @@ const Coin = () => {
         </div>
         <div className="m-2 bg-[#26272b] p-4 shadow-sm shadow-neutral-900 rounded-md">
           <div>
-            <span className="p-2 rounded-md bg-slate-400">Rank #</span>
+            <span className="p-2 rounded-md bg-slate-400">Rank # {coin.market_cap_rank}</span>
           </div>
           <div className="my-4 flex flex-wrap justify-between items-center">
             <div className="flex justify-between items-center w-60 md:w-96 text-lg md:text-2xl">
@@ -52,7 +52,7 @@ const Coin = () => {
                         <th className="border-x-2 border-[#26272b]">7d</th>
                         <th className="border-x-2 border-[#26272b]">14d</th>
                         <th className="border-x-2 border-[#26272b]">30d</th>
-                        <th className="border-x-2 border-[#26272b]">1y</th>
+                        <th className="border-x-2 border-[#26272b] hidden md:inline">1y</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -62,14 +62,14 @@ const Coin = () => {
                         <td className="text-center">{coin.market_data?.price_change_percentage_7d_in_currency ? <p>{coin.market_data.price_change_percentage_7d_in_currency.usd}</p> : null}</td>
                         <td className="text-center">{coin.market_data?.price_change_percentage_14d_in_currency ? <p>{coin.market_data.price_change_percentage_14d_in_currency.usd}</p> : null}</td>
                         <td className="text-center">{coin.market_data?.price_change_percentage_30d_in_currency ? <p>{coin.market_data.price_change_percentage_30d_in_currency.usd}</p> : null}</td>
-                        <td className="text-center">{coin.market_data?.price_change_percentage_1y_in_currency ? <p>{coin.market_data.price_change_percentage_1y_in_currency.usd}</p> : null}</td>
+                        <td className="text-center hidden md:inline">{coin.market_data?.price_change_percentage_1y_in_currency ? <p>{coin.market_data.price_change_percentage_1y_in_currency.usd}</p> : null}</td>
                     </tr>
                 </tbody>
             </table>
         </div>
         <div className="m-2 bg-[#26272b] p-4 shadow-sm shadow-neutral-900 rounded-md">
-            <div className="flex justify-between">
-                <div className="w-64 md:w-96">
+            <div className="flex flex-wrap justify-between">
+                <div className="w-64 lg:w-5/12">
                     <div className="flex justify-between border-b border-slate-400">
                         <h4>24 Hour Low</h4>
                         {coin.market_data?.low_24h ? <p>${coin.market_data.low_24h.usd.toLocaleString()}</p> : null}
@@ -79,7 +79,7 @@ const Coin = () => {
                         {coin.market_data?.high_24h ? <p>${coin.market_data.high_24h.usd.toLocaleString()}</p> : null}
                     </div>
                 </div>
-                <div className="w-64 md:w-96">
+                <div className="w-64 lg:w-5/12">
                     <div className="flex justify-between border-b border-slate-400">
                         <h4>Market Cap</h4>
                         {coin.market_data?.market_cap ? <p>${coin.market_data.market_cap.usd.toLocaleString()}</p> : null}

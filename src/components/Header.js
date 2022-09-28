@@ -19,8 +19,12 @@ function Header() {
       </Link>
       
       <div className="flex justify-between items-center w-20">
-        <GiHamburgerMenu />
-        {location.pathname === "/" && <BsSearch />}
+      <div>
+          {location.pathname === "/" && <BsSearch />}
+        </div> 
+        <div>
+          <GiHamburgerMenu />
+        </div> 
       </div>
     </header>
   );
