@@ -69,7 +69,7 @@ const Coin = () => {
         </div>
         <div className="m-2 bg-[#26272b] p-4 shadow-sm shadow-neutral-900 rounded-md">
             <div className="flex flex-wrap justify-between">
-                <div className="w-64 lg:w-5/12">
+                <div className="w-full md:w-64 lg:w-5/12">
                     <div className="flex justify-between border-b border-sky-700">
                         <h4>24 Hour Low</h4>
                         {coin.market_data?.low_24h ? <p>${coin.market_data.low_24h.usd.toLocaleString()}</p> : null}
@@ -79,7 +79,7 @@ const Coin = () => {
                         {coin.market_data?.high_24h ? <p>${coin.market_data.high_24h.usd.toLocaleString()}</p> : null}
                     </div>
                 </div>
-                <div className="w-64 lg:w-5/12">
+                <div className="w-full md:w-64 lg:w-5/12">
                     <div className="flex justify-between border-b border-sky-700">
                         <h4>Market Cap</h4>
                         {coin.market_data?.market_cap ? <p>${coin.market_data.market_cap.usd.toLocaleString()}</p> : null}
