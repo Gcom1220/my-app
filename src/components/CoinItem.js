@@ -5,7 +5,7 @@ const CoinItem = (props) => {
     <div className="cursor-pointer grid grid-cols-4 md:grid-cols-6 items-center place-items-center hover:text-slate-400 hover:scale-105 transition ease-in-out delay-300 bg-#26272b shadow-sm shadow-neutral-900 rounded-md mx-0.5 my-px  p-px">
       <p>{props.coins.market_cap_rank}</p>
       <div className="flex items-center">
-        <img src={props.coins.image} alt="" className="h-10 w-auto" />
+        <img src={props.coins.image} alt="" className="h-8 md:10 w-auto" />
         <p>{props.coins.symbol.toUpperCase()}</p>
       </div>
       <p>${props.coins.current_price.toLocaleString()}</p>

@@ -9,11 +9,11 @@ const Coins = (props) => {
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="w-11/12 lg:w-4/5">
-        <div className="font-bold place-items-center p-4 grid grid-cols-4 md:grid-cols-6 items-center bg-#26272b shadow-sm shadow-neutral-900 rounded-md mx-0.5 my-px">
+        <div className="font-bold md:text-lg place-items-center p-4 grid grid-cols-4 md:grid-cols-6 items-center bg-#26272b shadow-sm shadow-neutral-900 rounded-md mx-0.5 my-px">
           <p>Rank</p>
           <p>Coin</p>
           <p>Price</p>
-          <p>24h Change</p>
+          <p>24h %</p>
           <p className="hidden md:inline">Volume</p>
           <p className="hidden md:inline">Market Cap</p>
         </div>

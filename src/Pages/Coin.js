@@ -33,7 +33,7 @@ const Coin = () => {
             <span className="p-2 rounded-md bg-slate-400">Rank # {coin.market_cap_rank}</span>
           </div>
           <div className="my-4 flex flex-wrap justify-between items-center">
-            <div className="flex justify-between items-center w-60 md:w-96 text-lg md:text-2xl">
+            <div className="flex justify-between items-center w-48 md:w-96 text-lg md:text-2xl">
                 {coin.image ?  <img src= {coin.image.small} alt=""/> : null}
                 <p>{coin.name}</p>
                 <p className="uppercase">{coin.symbol}/USD</p> 
