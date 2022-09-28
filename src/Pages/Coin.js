@@ -30,7 +30,7 @@ const Coin = () => {
         </div>
         <div className="m-2 bg-[#26272b] p-4 shadow-sm shadow-neutral-900 rounded-md">
           <div>
-            <span className="p-2 rounded-md bg-slate-400">Rank # {coin.market_cap_rank}</span>
+            <span className="p-2 rounded-md bg-sky-700">Rank # {coin.market_cap_rank}</span>
           </div>
           <div className="my-4 flex flex-wrap justify-between items-center">
             <div className="flex justify-between items-center w-48 md:w-96 text-lg md:text-2xl">
@@ -70,21 +70,21 @@ const Coin = () => {
         <div className="m-2 bg-[#26272b] p-4 shadow-sm shadow-neutral-900 rounded-md">
             <div className="flex flex-wrap justify-between">
                 <div className="w-64 lg:w-5/12">
-                    <div className="flex justify-between border-b border-slate-400">
+                    <div className="flex justify-between border-b border-sky-700">
                         <h4>24 Hour Low</h4>
                         {coin.market_data?.low_24h ? <p>${coin.market_data.low_24h.usd.toLocaleString()}</p> : null}
                     </div>
-                    <div className="flex justify-between border-b border-slate-400">
+                    <div className="flex justify-between border-b border-sky-700">
                         <h4>24 Hour High</h4>
                         {coin.market_data?.high_24h ? <p>${coin.market_data.high_24h.usd.toLocaleString()}</p> : null}
                     </div>
                 </div>
                 <div className="w-64 lg:w-5/12">
-                    <div className="flex justify-between border-b border-slate-400">
+                    <div className="flex justify-between border-b border-sky-700">
                         <h4>Market Cap</h4>
                         {coin.market_data?.market_cap ? <p>${coin.market_data.market_cap.usd.toLocaleString()}</p> : null}
                     </div>
-                    <div className="flex justify-between border-b border-slate-400">
+                    <div className="flex justify-between border-b border-sky-700">
                         <h4>Circulating Supply</h4>
                         {coin.market_data ? <p>{coin.market_data.circulating_supply.toLocaleString()}</p> : null}
                     </div>

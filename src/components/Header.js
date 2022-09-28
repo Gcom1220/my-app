@@ -13,7 +13,7 @@ function Header() {
     <header className="flex justify-between h-20 text-3xl md:text-4xl font-lobster p-4">
       <Link to="/">
         <div className="flex justify-center items-center">
-          <GiCoins /> <span className="text-slate-400">my</span>
+          <GiCoins /> <span className="text-sky-700">my</span>
           Crypto.App
         </div>
       </Link>
